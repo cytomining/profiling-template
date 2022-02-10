@@ -62,3 +62,7 @@ git add .gitmodules
 git commit -m 'finalizing the recipe weld'
 git push
 ```
+
+### Step 4: Fill out experiment information
+
+TODO
