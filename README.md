@@ -65,4 +65,32 @@ git push
 
 ### Step 4: Fill out experiment information
 
-TODO
+
+
+```
+Cell type : _______ (ex: U2OS)
+Cell source: ________ (ex: Collab lab) (ex: GPP)
+Plate size : _______ (ex: 384)
+Plate brand : _______ (ex: Cell carrier Ultra)
+Cell densit(y/ies) : _______ (ex: 2K/well) (ex: Columns A-D 1K/well, Columns G-H 500/well)
+Type of perturbation : ___________ (ex: Gene overexpression) (ex: CRISPR KO + compounds)
+If (at least partially) genetic: 
+    Genetic introduction method : __________ (ex : lentiviral transduction)
+    Selection method : _________ (ex: None) (ex: Puromycin 1ug/mL 24 hrs)
+    Number of genes : __________ (ex: 384)
+    Number of perturbations per gene : __________ (ex: N/A) (ex: 4 guides per gene)
+If (at least partially) chemical :
+    Number of chemicals : __________ (ex: 384)
+    Number of dose points per chemical : _________ (ex: 1)
+Number of replicates per perturbation : __________ (ex: 5)
+Perturbation time point : _____________ (ex: 72 hrs)
+Staining protocol : ____________ (ex: CellPainting v3 (LINK)) (ex: LipocytePainting (CITATION)) (ex: 1:500 gt anti tubulin (cat #), 1:1000 A488 anti gt (cat #))
+Microscope + mode : ________ (ex: Opera Phenix (confocal mode)) 
+Excitation / emission details : ______________ (ex: ex 488 laser, em 550/50; ex 568 laser, em 600/30) (ex: see Index.idx.xml file)
+Objective : _____________ (ex: 20X water 1.0NA)
+Binning : ____________ (ex: 1x1)
+Sites per well : __________ (ex: 9)
+Pixel size : ____________ (ex: 0.656um)
+Number of Z planes : _______ (ex: 3)
+Z plane spacing : ________ (ex: 1um)
+```
