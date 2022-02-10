@@ -65,7 +65,7 @@ git push
 
 ### Step 4: Fill out experiment information
 
-
+When done, delete steps 0-3 and fill out the below; you also need to fill out the [spreadsheet](https://docs.google.com/spreadsheets/d/1c7IPYwczXYQfRHIRQimyWq8Yyd6mw8vaXLbuMqXgt7Y/edit#gid=666316692) and provide a link back to this file.  Fill out the whole template on the first batch; subsequent batches only add what is different (but also do add to the spreadsheet)  
 
 ```
 Cell type : _______ (ex: U2OS)
