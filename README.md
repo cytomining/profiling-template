@@ -65,7 +65,15 @@ git push
 
 ### Step 4: Fill out experiment information
 
-When done, delete steps 0-3 and fill out the below; you also need to fill out the [spreadsheet](https://docs.google.com/spreadsheets/d/1c7IPYwczXYQfRHIRQimyWq8Yyd6mw8vaXLbuMqXgt7Y/edit#gid=666316692) and provide a link back to this file.  Fill out the whole template on the first batch; subsequent batches only add what is different (but also do add to the spreadsheet)  
+_This step ensures that relevant experimental information is captured._
+_Listed below are experimental details that the Broad Institute Imaging Platform uses. Feel free to adapt to your needs._
+
+When done, delete steps 0-3 and fill out the below.
+Fill out the whole template on the first batch; for subsequent batches only add what is different.
+
+The Broad Institute Imaging Platform also logs this information in a [spreadsheet](https://docs.google.com/spreadsheets/d/1c7IPYwczXYQfRHIRQimyWq8Yyd6mw8vaXLbuMqXgt7Y/edit#gid=666316692)(Broad-internal access only). 
+The corresponding entry/entries in the sheet should link back to this file.
+
 
 ```
 Cell type : _______ (ex: U2OS)
