@@ -10,3 +10,5 @@ authors:
 - family-names: "Singh"
   given-names: "Shantanu"
   orcid: "https://orcid.org/0000-0003-3150-3025"
+title: "Broad Institute Imaging Platform Profiling Template"
+url: "https://github.com/cytomining/profiling-template"
