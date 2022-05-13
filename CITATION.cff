@@ -2,8 +2,11 @@ cff-version: 1.2.0
 message: "If you use this template, please cite it as below."
 authors:
 - family-names: "Chandrasekaran"
-  given-names: "Niranj"
-  orcid:  "https://orcid.org/0000-0001-8874-9988" 
+  given-names: "Srinivas Niranj"
+  orcid:  "https://orcid.org/0000-0001-8874-9988"
+- family-names: "Way"
+  given-names: "Gregory"
+  orcid: "https://orcid.org/0000-0002-0503-9348"
 - family-names: "Carpenter"
   given-names: "Anne"
   orcid: "https://orcid.org/0000-0003-1555-8261"
