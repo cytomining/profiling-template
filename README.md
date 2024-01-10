@@ -5,7 +5,11 @@ The purpose of the repository is to weld together a versioned data processing pi
 
 (Derived from this [template](https://github.com/broadinstitute/pooled-cell-painting-profiling-template))
 
-**AFTER GENERATING A NEW REPO, CHANGE OR DELETE ALL NONSPECIFIC DETAILS**
+**DO THE FOLLOWING AFTER GENERATING A NEW REPO:**
+
+- Change the title of the README to **Image-based Profiling for [ProjectName]\(project-url\)**.
+- Delete the **Setup** section
+- Keep the notes section, and edit as necessary. 
 
 ## Setup
 
@@ -63,43 +67,43 @@ git commit -m 'finalizing the recipe weld'
 git push
 ```
 
-### Step 4: Fill out experiment information
+## Notes
 
-_This step ensures that relevant experimental information is captured._
-_Listed below are experimental details that the Broad Institute Imaging Platform uses. Feel free to adapt to your needs._
+To download the data in this repo, first, clone this repo
 
-When done, delete steps 0-3 and fill out the below.
-Fill out the whole template on the first batch; for subsequent batches only add what is different.
-
-The Broad Institute Imaging Platform also logs this information in a [spreadsheet](https://docs.google.com/spreadsheets/d/1c7IPYwczXYQfRHIRQimyWq8Yyd6mw8vaXLbuMqXgt7Y/edit#gid=666316692)(Broad-internal access only). 
-The corresponding entry/entries in the sheet should link back to this file.
-
-
+```bash
+git clone git@github.com:<org>/<repo>.git
 ```
-Cell type : _______ (ex: U2OS)
-Cell source: ________ (ex: Collab lab) (ex: GPP)
-Plate size : _______ (ex: 384)
-Plate brand : _______ (ex: Cell carrier Ultra)
-Cell densit(y/ies) : _______ (ex: 2K/well) (ex: Columns A-D 1K/well, Columns G-H 500/well)
-Type of perturbation : ___________ (ex: Gene overexpression) (ex: CRISPR KO + compounds)
-If (at least partially) genetic: 
-    Genetic introduction method : __________ (ex : lentiviral transduction)
-    Selection method : _________ (ex: None) (ex: Puromycin 1ug/mL 24 hrs)
-    Number of genes : __________ (ex: 384)
-    Number of perturbations per gene : __________ (ex: N/A) (ex: 4 guides per gene)
-If (at least partially) chemical :
-    Number of chemicals : __________ (ex: 384)
-    Number of dose points per chemical : _________ (ex: 1)
-Number of replicates per perturbation : __________ (ex: 5)
-Perturbation time point : _____________ (ex: 72 hrs)
-Staining protocol : ____________ (ex: CellPainting v3 (LINK)) (ex: LipocytePainting (CITATION)) (ex: 1:500 gt anti tubulin (cat #), 1:1000 A488 anti gt (cat #))
-Microscope : ________ (ex: Opera Phenix ) 
-Mode : ________ (ex: Confocal) 
-Excitation / emission details : ______________ (ex: ex 488 laser, em 550/50; ex 568 laser, em 600/30) (ex: see Index.idx.xml file)
-Objective : _____________ (ex: 20X water 1.0NA)
-Binning : ____________ (ex: 1x1)
-Sites per well : __________ (ex: 9)
-Pixel size : ____________ (ex: 0.656um)
-Number of Z planes : _______ (ex: 3)
-Z plane spacing : ________ (ex: 1um)
+
+then, download the profiles
+
+```bash
+cd <repo>
+dvc pull
+```
+
+### AWS configuration
+
+The DVC cache is typically stored in an AWS S3 bucket, so you will need run `aws configure` before running `dvc pull`.
+
+If the DVC location is not publicly accessible, you will need AWS credentials to access it.
+
+If the DVC location is not publicly accessible, to access the files stored via DVC, you will need to created a IAM user with the `AmazonS3ReadOnlyAccess` policy attached:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 ```
