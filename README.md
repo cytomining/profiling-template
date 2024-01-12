@@ -75,11 +75,10 @@ We recommend all users, both internal and external, to diligently track project 
 
 ## Metadata template
 
-<details>
-    
-When done, delete steps 0-3 and fill out the below.
 Fill out the whole template on the first batch; for subsequent batches only add what is different.
 
+<details>
+    
 ```
 Cell type : _______ (ex: U2OS)
 Cell source: ________ (ex: Collab lab) (ex: GPP)
