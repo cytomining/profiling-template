@@ -9,7 +9,8 @@ The purpose of the repository is to weld together a versioned data processing pi
 
 - Change the title of the README to **Image-based Profiling for [ProjectName]\(project-url\)**.
 - Delete the **Setup** section
-- Keep the notes section, and edit as necessary. 
+- Keep the notes section, and edit as necessary.
+- Keep the metadata section if you are adopting it, and edit as necessary.
 
 ## Setup
 
@@ -69,8 +70,10 @@ git push
 
 ### Step 4: Fill out experiment information
 
-_This step ensures that relevant experimental information is captured._
-_We recommend all users, both internal and external, to diligently track project metadata. For those without a system, a template is provided below._
+This step ensures that relevant experimental information is captured.
+We recommend all users, both internal and external, to diligently track project metadata. For those without a system, a template is provided below.
+
+## Metadata template
 
 <details>
     
