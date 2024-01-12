@@ -5,7 +5,12 @@ The purpose of the repository is to weld together a versioned data processing pi
 
 (Derived from this [template](https://github.com/broadinstitute/pooled-cell-painting-profiling-template))
 
-**AFTER GENERATING A NEW REPO, CHANGE OR DELETE ALL NONSPECIFIC DETAILS**
+**DO THE FOLLOWING AFTER GENERATING A NEW REPO:**
+
+- Change the title of the README to **Image-based Profiling for [ProjectName]\(project-url\)**.
+- Delete the **Setup** section
+- Keep the notes section, and edit as necessary.
+- Keep the metadata section if you are adopting it, and edit as necessary.
 
 ## Setup
 
@@ -65,16 +70,15 @@ git push
 
 ### Step 4: Fill out experiment information
 
-_This step ensures that relevant experimental information is captured._
-_Listed below are experimental details that the Broad Institute Imaging Platform uses. Feel free to adapt to your needs._
+This step ensures that relevant experimental information is captured.
+We recommend all users, both internal and external, to diligently track project metadata. For those without a system, a template is provided below.
 
-When done, delete steps 0-3 and fill out the below.
+## Metadata template
+
 Fill out the whole template on the first batch; for subsequent batches only add what is different.
 
-The Broad Institute Imaging Platform also logs this information in a [spreadsheet](https://docs.google.com/spreadsheets/d/1c7IPYwczXYQfRHIRQimyWq8Yyd6mw8vaXLbuMqXgt7Y/edit#gid=666316692)(Broad-internal access only). 
-The corresponding entry/entries in the sheet should link back to this file.
-
-
+<details>
+    
 ```
 Cell type : _______ (ex: U2OS)
 Cell source: ________ (ex: Collab lab) (ex: GPP)
@@ -102,4 +106,47 @@ Sites per well : __________ (ex: 9)
 Pixel size : ____________ (ex: 0.656um)
 Number of Z planes : _______ (ex: 3)
 Z plane spacing : ________ (ex: 1um)
+```
+
+</details>
+
+## Notes
+
+To download the data in this repo, first, clone this repo
+
+```bash
+git clone git@github.com:<org>/<repo>.git
+```
+
+then, download the profiles
+
+```bash
+cd <repo>
+dvc pull
+```
+
+### AWS configuration
+
+The DVC cache is typically stored in an AWS S3 bucket, so you will need run `aws configure` before running `dvc pull`.
+
+If the DVC location is not publicly accessible, you will need AWS credentials to access it.
+
+If the DVC location is not publicly accessible, to access the files stored via DVC, you will need to created a IAM user with the `AmazonS3ReadOnlyAccess` policy attached:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
 ```
