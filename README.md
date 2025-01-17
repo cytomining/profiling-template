@@ -75,6 +75,8 @@ We recommend all users, both internal and external, to diligently track project 
 
 ## Metadata template
 
+Use this section only if you aren't tracking this metadata elsewhere (e.g., the Broad Imaging Platform's has an internal tracker).
+
 Fill out the whole template on the first batch; for subsequent batches only add what is different.
 
 <details>
