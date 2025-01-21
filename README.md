@@ -71,8 +71,6 @@ git push
 ```
 
 ----
-----
-
 
 **DELETE EVERYTHING ABOVE THIS LINE AND START WITH THE CONTENT BELOW**
 
@@ -89,7 +87,7 @@ git push
 - **Metadata Location**: [Link to external metadata tracking system, if applicable]
 - **Analysis Repo**: [Link to associated analysis repositories]
 
-All discussions related to this dataset should happen in the GitHub issues of this repository. 
+Note: All discussions related to this dataset should happen in the GitHub issues of this repository. 
 
 ## Processing Details
 
