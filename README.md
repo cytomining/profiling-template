@@ -7,7 +7,6 @@ The purpose of the repository is to weld together a versioned data processing pi
 
 **DO THE FOLLOWING AFTER GENERATING A NEW REPO:**
 
-- Delete everything up to the marker line below
 - Change the title following the format: "Image-based Profiling for [ProjectName]"
 - Fill in all sections below the marker with your project's information
 - Either fill out the metadata template or link to your external tracking system
