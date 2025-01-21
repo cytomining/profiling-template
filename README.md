@@ -12,7 +12,7 @@ The purpose of the repository is to weld together a versioned data processing pi
 - Fill in all sections below the marker with your project's information
 - Either fill out the metadata template or link to your external tracking system
 - Note that all discussions related to this dataset should happen in the corresponding GitHub issues
-- Delete these instructions
+- Delete the instructions (from the top of this document to the marker line below so that the README starts with "Image-based Profiling for [ProjectName]"
 
 ## Setup
 
