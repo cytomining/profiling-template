@@ -7,10 +7,11 @@ The purpose of the repository is to weld together a versioned data processing pi
 
 **DO THE FOLLOWING AFTER GENERATING A NEW REPO:**
 
-- Change the title of the README to **Image-based Profiling for [ProjectName]\(project-url\)**.
-- Delete the **Setup** section
-- Keep the notes section, and edit as necessary.
-- Keep the metadata section if you are adopting it, and edit as necessary.
+- Change the title following the format: "Image-based Profiling for [ProjectName]"
+- Fill in all sections below the marker with your project's information
+- Either fill out the metadata template or link to your external tracking system
+- Note that all discussions related to this dataset should happen in the corresponding GitHub issues
+- Delete the instructions (from the top of this document to the marker line below so that the README starts with "Image-based Profiling for [ProjectName]"
 
 ## Setup
 
@@ -68,19 +69,38 @@ git commit -m 'finalizing the recipe weld'
 git push
 ```
 
-### Step 4: Fill out experiment information
+----
 
-This step ensures that relevant experimental information is captured.
-We recommend all users, both internal and external, to diligently track project metadata. For those without a system, a template is provided below.
+**DELETE EVERYTHING ABOVE THIS LINE AND START WITH THE CONTENT BELOW**
 
-## Metadata template
+# [Project Name]
 
-Use this section only if you aren't tracking this metadata elsewhere (e.g., the Broad Imaging Platform's has an internal tracker).
+## Overview
 
-Fill out the whole template on the first batch; for subsequent batches only add what is different.
+[Brief description of the experiment/dataset (2-3 sentences)]
+
+## Project Information
+
+- **Start Date**: YYYY_MM_DD (of the first batch)
+- **Related data repos**: [Links to related data repositories]
+- **Metadata Location**: [Link to external metadata tracking system, if applicable]
+- **Analysis Repo**: [Link to associated analysis repositories]
+
+Note: All discussions related to this dataset should happen in the GitHub issues of this repository. 
+
+## Processing Details
+
+- **Pipeline Modifications**: [Any changes from standard pipeline]
+- **Other notes**:
+  - [Any other notes related to processing]
+
+## Experimental Metadata
+
+Below is the template for tracking experimental metadata. Fill this out if not using an external tracking system.
 
 <details>
-    
+<summary>Metadata Template</summary>
+
 ```
 Cell type : _______ (ex: U2OS)
 Cell source: ________ (ex: Collab lab) (ex: GPP)
@@ -88,7 +108,7 @@ Plate size : _______ (ex: 384)
 Plate brand : _______ (ex: Cell carrier Ultra)
 Cell densit(y/ies) : _______ (ex: 2K/well) (ex: Columns A-D 1K/well, Columns G-H 500/well)
 Type of perturbation : ___________ (ex: Gene overexpression) (ex: CRISPR KO + compounds)
-If (at least partially) genetic: 
+If (at least partially) genetic:
     Genetic introduction method : __________ (ex : lentiviral transduction)
     Selection method : _________ (ex: None) (ex: Puromycin 1ug/mL 24 hrs)
     Number of genes : __________ (ex: 384)
@@ -99,8 +119,8 @@ If (at least partially) chemical :
 Number of replicates per perturbation : __________ (ex: 5)
 Perturbation time point : _____________ (ex: 72 hrs)
 Staining protocol : ____________ (ex: CellPainting v3 (LINK)) (ex: LipocytePainting (CITATION)) (ex: 1:500 gt anti tubulin (cat #), 1:1000 A488 anti gt (cat #))
-Microscope : ________ (ex: Opera Phenix ) 
-Mode : ________ (ex: Confocal) 
+Microscope : ________ (ex: Opera Phenix )
+Mode : ________ (ex: Confocal)
 Excitation / emission details : ______________ (ex: ex 488 laser, em 550/50; ex 568 laser, em 600/30) (ex: see Index.idx.xml file)
 Objective : _____________ (ex: 20X water 1.0NA)
 Binning : ____________ (ex: 1x1)
@@ -112,15 +132,15 @@ Z plane spacing : ________ (ex: 1um)
 
 </details>
 
-## Notes
+## Data Access Instructions
 
-To download the data in this repo, first, clone this repo
+### Cloning the Repository
 
 ```bash
 git clone git@github.com:<org>/<repo>.git
 ```
 
-then, download the profiles
+### Downloading Data Files
 
 ```bash
 cd <repo>
