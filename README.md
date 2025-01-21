@@ -76,7 +76,6 @@ git push
 
 **DELETE EVERYTHING ABOVE THIS LINE AND START WITH THE CONTENT BELOW**
 
-
 # [Project Name]
 
 ## Overview
@@ -86,23 +85,17 @@ git push
 ## Project Information
 
 - **Start Date**: YYYY_MM_DD (of the first batch)
-- **Status**: [e.g., Ongoing, Completed]
-- **Primary Contact**: [Name and contact information]
-- **Related Projects**: [Links to related repositories/projects]
+- **Related data repos**: [Links to related data repositories]
 - **Metadata Location**: [Link to external metadata tracking system, if applicable]
+- **Analysis Repo**: [Link to associated analysis repositories]
+
+All discussions related to this dataset should happen in the GitHub issues of this repository. 
 
 ## Processing Details
 
 - **Pipeline Modifications**: [Any changes from standard pipeline]
-- **Analysis Repo**: [Link to associated analysis repos]
-- **Special Considerations**:
-  - [Important processing details]
-  - [Known limitations or caveats]
-  - [Data usage considerations]
-
-## Batch Information
-
-Batch-specific details are tracked in repository issues. Each new batch should create an issue using the batch template.
+- **Other notes**:
+  - [Any other notes related to processing]
 
 ## Experimental Metadata
 
